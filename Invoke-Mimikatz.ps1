@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @asaf53409
-Sign out
-112
-620 333 clymb3r/PowerShell
- Code  Issues 6  Pull requests 1  Projects 0  Wiki  Insights
-PowerShell/Invoke-Mimikatz/Invoke-Mimikatz.ps1
-80fa475  on Sep 30, 2015
-@mbegan mbegan Addresses issue #6 processor detection bug
-@clymb3r @mbegan @gentilkiwi
-     
-2752 lines (2303 sloc)  661 KB
 function Invoke-Mimikatz
 {
 <#
